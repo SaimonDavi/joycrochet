@@ -23,15 +23,17 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 349;
+  --hueSecond: 77;
+  --hueDivider: 215; /* usando nas linhas dividers */
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue) 36% 65%);
+  --base-color-second: hsl(var(--hueSecond) 6% 42%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: hsl(33, 10%, 90%);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -80,8 +82,8 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1),
-    hsla(var(--hue), 65%, 88%, 0.34)
+    hsla(var(--hueDivider), 3%, 40%, 1),
+    hsla(var(--hueDivider), 5%, 80%, 0.34)
   );
 }
 
@@ -89,8 +91,8 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue), 36%, 57%, 1)
+    hsla(var(--hueDivider), 5%, 80%, 0.34),
+    hsla(var(--hueDivider), 3%, 40%, 1)
   );
 }
 
@@ -308,7 +310,7 @@ nav.show div.icon-close {
 
 /*====  ABOUT ============================ */
 #about {
-  background: white;
+  background: var(--body-color);
 }
 
 #about .container {
@@ -371,7 +373,7 @@ nav.show div.icon-close {
 
 /*====  TESTIMONIALS ============================ */
 #testimonials {
-  background: white;
+  background: var(--body-color);
 }
 
 #testimonials .container {
@@ -466,7 +468,7 @@ nav.show div.icon-close {
 
 /*====  FOOTER ============================ */
 footer {
-  background: var(--base-color);
+  background: var(--base-color-second);
 }
 
 footer.section {
