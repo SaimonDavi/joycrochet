@@ -1,4 +1,4 @@
-$('.materials').owlCarousel({
+$('.materials-malhas').owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
@@ -16,6 +16,24 @@ $('.materials').owlCarousel({
     },
     1000: {
       items: 4
+    }
+  }
+})
+
+$('.materials-correntes').owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  stagePadding: 55,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 3
     }
   }
 })

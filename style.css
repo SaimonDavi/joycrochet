@@ -428,6 +428,10 @@ nav.show div.icon-close {
   font-weight: bold;
 }
 
+#materials .materials-malhas {
+  margin-bottom: 1rem;
+}
+
 /*====  TESTIMONIALS ============================ */
 #testimonials {
   background: var(--body-color);
